@@ -1,13 +1,13 @@
 import db
-from mplace.models import WBOrder
+from mplace.models import WBStock
 
 
 def main():
     session = db.session_factory()
 
-    rows = session.query(WBOrder).limit(100).all()
+    rows = session.query(WBStock).limit(100).all()
     for row in rows:
-        print(row.srid)
+        print(row.nmId)
 
 
 if __name__ == '__main__':

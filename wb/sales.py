@@ -1,11 +1,11 @@
 import db
-from mplace.models import WBOrder
+from mplace.models import WBSale
 
 
 def main():
     session = db.session_factory()
 
-    rows = session.query(WBOrder).limit(100).all()
+    rows = session.query(WBSale).limit(100).all()
     for row in rows:
         print(row.srid)
 
