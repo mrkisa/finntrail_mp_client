@@ -1,3 +1,1 @@
-mysqlclient==2.2.1
-SQLAlchemy==2.0.25
 git+https://github.com/mrkisa/finntrail_mp.git#egg=mplace

@@ -1,13 +1,13 @@
 import db
-from mplace import wb
+from mplace import ozon
 
 
 def main():
     session = db.session_factory()
 
-    rows = session.query(wb.Stock).limit(100).all()
+    rows = session.query(ozon.Transaction).limit(100).all()
     for row in rows:
-        print(row.nmId)
+        print(row.operation_id)
 
 
 if __name__ == '__main__':
